@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .taichi {
+      text-align: center;
+      width: 500px;
+      height: 500px;
+      box-shadow: 0 0 20px black;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(to left, black 50%, white 50%);
+    }
+
+    .taichi::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background: white;
+      border-radius: 50%;
+      left: 25%;
+    }
+
+    .taichi::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background: black;
+      border-radius: 50%;
+      left: 25%;
+      top: 50%;
+    }
+
+    .taichi .yinyang::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: black;
+      border-radius: 50%;
+      left: 50%;
+      top: 25%;
+      transform: translate(-50%, -50%);
+    }
+
+    .taichi .yinyang::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="taichi">
+    <div class="yinyang"></div>
+  </div>
+</body>
+
+</html>
