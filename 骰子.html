@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>骰子</title>
+  <style>
+    .total {
+      /* 虛設寬度才不會換行 */
+      width: 800px;
+      text-align: center;
+      margin: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box {
+      position: relative;
+      padding: 15px;
+      width: 80px;
+      height: 80px;
+      border: 1px solid black;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(to top right, rgb(207, 206, 206), white);
+    }
+
+    .point {
+      margin: 13px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: black;
+    }
+
+    .red {
+      background: red;
+    }
+
+    .p1 {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .p2 {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .p3 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .p4 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .p5 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .p6 {
+      position: absolute;
+      margin: 0;
+      margin-right: 13px;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    .p7 {
+      position: absolute;
+      margin: 0;
+      margin-left: 13px;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="total">
+    <div class="box">
+      <div class="point red p1"></div>
+    </div>
+    <div class="box">
+      <div class="point p2"></div>
+      <div class="point p3"></div>
+    </div>
+    <div class="box">
+      <div class="point p2"></div>
+      <div class="point p1"></div>
+      <div class="point p3"></div>
+    </div>
+    <div class="box ">
+      <div class="point red p2"></div>
+      <div class="point red p5"></div>
+      <div class="point red p3"></div>
+      <div class="point red p4"></div>
+    </div>
+    <div class="box">
+      <div class="point p2"></div>
+      <div class="point p4"></div>
+      <div class="point p1"></div>
+      <div class="point p5"></div>
+      <div class="point p3"></div>
+    </div>
+    <div class="box">
+      <div class="point p2"></div>
+      <div class="point p4"></div>
+      <div class="point p6"></div>
+      <div class="point p7"></div>
+      <div class="point p5"></div>
+      <div class="point p3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
